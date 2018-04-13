@@ -1,0 +1,1 @@
+Mỗi học viên tạo một thư mục tên của mình và làm trong thư mục đó

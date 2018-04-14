@@ -125,11 +125,4 @@ user.checkBien(1);
 //     return "Hello, " + person.firstName + " " + person.lastName;
 // }
 
-// var { firstName } = user;
-// var copy = {    
-//     ...user,
-//     firstName: 'huhu'
-// };
-
-// var array = [1,2,3];
-// var [first, ...rest] = array;
+// delete

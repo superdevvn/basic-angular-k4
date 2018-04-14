@@ -76,5 +76,3 @@ user.checkBien(1);
 
 // var user = new Teacher(1000);
 // document.getElementById('div1').innerHTML = user.layLuong().toString();
-
-//da sua

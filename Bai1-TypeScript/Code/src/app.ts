@@ -49,46 +49,32 @@ class Teacher extends Student {
     }
 
     public setTime() {
-        setTimeout((a:string) => {
+        setTimeout((a: string) => {
             //console.log(this);
-            
-            document.getElementById('div1').innerHTML = this.firstName;    
+
+            document.getElementById('div1').innerHTML = this.firstName;
         }, 1000);
-        
-        setTimeout(function(a:string) {
+
+        setTimeout(function (a: string) {
             //console.log(this);
-            
-            document.getElementById('div1').innerHTML = this.firstName;    
+
+            document.getElementById('div1').innerHTML = this.firstName;
         }.bind(this), 1000);
     }
-    public taoBien(){
-        let a: any;
-        a = '';
-        a = 20;
-        a = [];}
-    public checkBien(value: string | number){
-        console.log(value);
-        
-        if (typeof value === 'number'){
-            document.getElementById('div2')
-        }
-    }
-    
 }
 var user = new Teacher(1000);
-user.setTime();
+user.checkBien(1);
+
+// var user = new Teacher(1000);
+// user.phanGiaiDoiTuong({
+//     name: 'Hey',
+//     value: 100
+// });
 
 // var user = new Teacher(1000);
 // document.getElementById('div2').innerHTML = user.layLuong(3).toString();
 
 // var user = new Teacher(1000);
 // document.getElementById('div1').innerHTML = user.layLuong().toString();
-
-// var user = new Student("Trang", "Huynh");
-// document.getElementById('div0').innerHTML = user.fullName;
-
-// function greeter(person : Person) {
-//     return "Hello, " + person.firstName + " " + person.lastName;
-// }
 
 //da sua

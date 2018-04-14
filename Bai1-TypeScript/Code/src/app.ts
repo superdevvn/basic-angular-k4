@@ -61,8 +61,20 @@ class Teacher extends Student {
             document.getElementById('div1').innerHTML = this.firstName;    
         }.bind(this), 1000);
     }
+    public taoBien(){
+        let a: any;
+        a = '';
+        a = 20;
+        a = [];}
+    public checkBien(value: string | number){
+        console.log(value);
+        
+        if (typeof value === 'number'){
+            document.getElementById('div2')
+        }
+    }
+    
 }
-
 var user = new Teacher(1000);
 user.setTime();
 
@@ -79,11 +91,4 @@ user.setTime();
 //     return "Hello, " + person.firstName + " " + person.lastName;
 // }
 
-// var { firstName } = user;
-// var copy = {    
-//     ...user,
-//     firstName: 'huhu'
-// };
-
-// var array = [1,2,3];
-// var [first, ...rest] = array;
+//da sua

@@ -121,15 +121,4 @@ user.checkBien(1);
 // var user = new Student("Trang", "Huynh");
 // document.getElementById('div0').innerHTML = user.fullName;
 
-// function greeter(person : Person) {
-//     return "Hello, " + person.firstName + " " + person.lastName;
-// }
-
-// var { firstName } = user;
-// var copy = {    
-//     ...user,
-//     firstName: 'huhu'
-// };
-
-// var array = [1,2,3];
-// var [first, ...rest] = array;
+// removed

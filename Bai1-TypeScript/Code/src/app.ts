@@ -61,48 +61,7 @@ class Teacher extends Student {
             document.getElementById('div1').innerHTML = this.firstName;
         }.bind(this), 1000);
     }
-
-    public taoBien() {
-        let a: any;
-        a = '';
-        a = 20;
-        a = [];
-    }
-
-    public phanGiaiDoiTuong(obj: any) {
-        // let x = obj.name;
-        // let y = obj.value;
-
-        // let {name:x1, value: y1} = obj;
-        // console.log(x1, y1);
-
-        // var array = [1, 2, 3];
-        // var [first, ...rest] = array;
-        // console.log(rest);
-
-        // var copy = {
-        //     ...obj,
-        //     value: 1000
-        // };
-        // console.log(copy);
-
-        // let obj2 = {
-        //     name: obj.name,
-        //     value: obj.value
-        // };
-
-        // console.log(obj2);
-    }
-
-    public checkBien(value: string | number) {
-        console.log(value);
-        
-        if (typeof value === 'number') {
-            document.getElementById('div2').innerHTML = 'la so';
-        }
-    }
 }
-
 var user = new Teacher(1000);
 user.checkBien(1);
 
@@ -117,6 +76,3 @@ user.checkBien(1);
 
 // var user = new Teacher(1000);
 // document.getElementById('div1').innerHTML = user.layLuong().toString();
-
-// var user = new Student("Trang", "Huynh");
-// document.getElementById('div0').innerHTML = user.fullName;

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+            "module": "commonjs",
+            "target": "es3",
+            "noImplicitAny": true,
+            "removeComments": true,
+            "preserveConstEnums": true,
+            "sourceMap": true
+    },
+    "include": [
+            "src/interfaces/*.ts",
+            "src/models/*.ts",
+            "src/index.ts"
+        ],
+    "exclude": [
+        "node_modules"
+    ]
+}

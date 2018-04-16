@@ -120,5 +120,3 @@ user.checkBien(1);
 
 // var user = new Student("Trang", "Huynh");
 // document.getElementById('div0').innerHTML = user.fullName;
-
-// var [first, ...rest] = array;

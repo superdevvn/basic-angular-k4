@@ -1,0 +1,23 @@
+.login-form {
+    width: 500px;
+    height: 800px;
+    background-color: papayawhip;
+    display: block;
+    text-align: center;
+}
+
+.login-form > img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.form {
+    text-align: left;
+    padding: 20px;
+}
+
+.form > button {
+    margin: 10px 0;
+    width: 100%;
+}

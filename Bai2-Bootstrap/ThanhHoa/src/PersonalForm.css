@@ -1,0 +1,12 @@
+.container {
+   margin-top: 12%;
+   border-radius: 30px;
+   background-color: #d1d1d879;
+}
+.input-group-item {
+   text-indent: 0.75em;
+}
+.btn-align {
+   position: relative;
+   left: 40%;
+}

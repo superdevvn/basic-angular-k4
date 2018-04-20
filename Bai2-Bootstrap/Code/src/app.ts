@@ -1,4 +1,6 @@
-declare let $;
+// declare let $;
+// import * as $ from 'jquery'
+// import 'bootstrap'
 
 const onLoginFormSubmit = (event) => {
     event.preventDefault();
@@ -10,8 +12,8 @@ const onLoginFormSubmit = (event) => {
     // alert(email.value + ': ' + password.value);
 
     //jQuery
-    const email2: any = $('#login-email');
-    const password2: any = $('#login-password');
+    const email2 = $('#login-email');
+    const password2 = $('#login-password');
     console.log(email2, password2);    
     //alert(email.value + ': ' + password.value);
 

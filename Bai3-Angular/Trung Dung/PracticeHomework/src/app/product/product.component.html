@@ -1,0 +1,19 @@
+<div class="col-12 product">
+  <h3>Product:</h3>
+  <div class="offset-3 col-6">
+    <label for="textCode">Code: </label> {{code}}
+    <input type="text" class="textCode input form-control" [(ngModel)]="code">
+    <label for="textName">Name: </label>{{name}}
+    <input type="text" class="textName input form-control" [(ngModel)]="name">
+    <label for="manufacturer">Manufactory</label>
+    <select class="manufacturer input form-control" [(ngModel)]="manufacturer">
+      <option *ngFor='let i of combobox' [value]="i.value">{{i.display}}</option>
+    </select>
+    <label for="textPrice">Price: </label>{{price}}
+    <input type="text" class="textPrice input form-control" [(ngModel)]="price">
+    <label for="isActive" class="input-group-item">IsActived : </label>
+    <input type="checkbox" class="isActive input-group-item" [(ngModel)]="isActive">
+    <button (click)="save()" class="btn btn-primary input">Save</button>
+    <p id="infoProduct"></p>
+  </div>
+</div>

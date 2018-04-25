@@ -1,0 +1,23 @@
+<label>
+    <h6>Tên đăng nhập:{{ name }}</h6>
+    <input class="form-control" placeholder="Tên đăng nhập" [(ngModel)]="name">
+    <h6>Mật khẩu:{{ pass }}</h6>
+    <input class="form-control" placeholder="Mật khẩu" [(ngModel)]="pass">
+
+<label class="checkbox-inline" >
+    <strong >Giới tính</strong> {{isMale?'Nam':'Nữ'}}<input  type="checkbox" [(ngModel)]="isMale">
+</label>
+
+<strong >Mã code:{{role}}</strong><br> 
+<select class="form-control" [(ngModel)]="role" >
+        <option value="70000">TP.HCM</option>
+        <option value="880000">An Giang</option>
+        <option value="260000">Bạc Liêu</option>
+</select>
+<button (click)="clickMe()" type="button" class="btn btn-info">Login </button>
+</label>
+
+
+
+
+

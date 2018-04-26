@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Data } from '../constants/mock-data';
 import { NumberPipe } from '../pipes/number-pipe';
 
 @Component({
@@ -14,9 +13,4 @@ import { NumberPipe } from '../pipes/number-pipe';
 })
 export class AppComponent {
   title = 'app';
-  dataList = Data;
-
-  getDate(index: number) {
-    return new Date(this.dataList[index].registered);
-  }
 }

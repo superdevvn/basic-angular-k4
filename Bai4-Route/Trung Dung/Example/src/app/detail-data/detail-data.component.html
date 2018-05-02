@@ -1,0 +1,12 @@
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Detail-Data</li>
+        </ol>
+      </nav>
+<table class="table table-striped table-bordered">
+    <tr  *ngFor="let property of getDataList()">
+        <td><b>{{property.name}}: </b></td>
+        <td>{{property.value}}</td>
+    </tr>
+</table>

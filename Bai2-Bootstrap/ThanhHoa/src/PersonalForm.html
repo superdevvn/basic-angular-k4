@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="PersonalForm.css">
+   <title>Personal Form</title>
+</head>
+
+<body>
+   <div class="container">
+      <h2 class="h2 text-center">Information</h2>
+      <form onsubmit="onSubmitFunc(event)">
+         <div class=" row">
+            <!--start username -->
+            <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+               <label for="input-username">Username</label>
+               <div class="input-group mb-2">
+                  <span class="input-group-text">
+                     <i class="fa fa-user-circle-o" aria-hidden="true "></i>
+                  </span>
+                  <input class="form-control" value="thanhhoa214" placeholder="Fill your username" id="input-username" autofocus>
+               </div>
+            </div>
+            <!-- end username -->
+            <!-- start password -->
+            <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+               <label for="input-password">Password</label>
+               <div class="input-group">
+                  <span class="input-group-text">
+                     <i class="fa fa-eye-slash"></i>
+                  </span>
+                  <input type="password" class="form-control" value="123456" placeholder="Fill your password " name="input-password" id="input-password">
+               </div>
+            </div>
+            <!-- end password -->
+            <!-- start sex -->
+            <div class="col-xl-4 col-lg-4 col-sm-6 col-12 ">
+               <label for="input-sex">Sex</label>
+               <div class="input-group">
+                  <select class="custom-select" id="input-sex">
+                     <option selected>Choose...</option>
+                     <option value="Male">Male</option>
+                     <option value="Female">Female</option>
+                     <option value="Unknown">Unknown</option>
+                  </select>
+               </div>
+            </div>
+            <!-- end sex -->
+            <!-- start services -->
+            <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+               <label for="input-services">Services</label>
+               <div class="input-group-item">
+                  <input type="radio" name="services" id="services-create" checked>
+                  <label for="services-create">Create new account.</label>
+               </div>
+               <div class="input-group-item">
+                  <input type="radio" name="services" id="services-forget">
+                  <label for="services-forget">Forgot password.</label>
+               </div>
+            </div>
+            <!-- end services -->
+            <!-- start favorite -->
+            <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
+               <label for="favorites">Favorites</label>
+               <div class="input-group-item">
+                  <input type="checkbox" name="favorite-item" id="favor1">
+                  <label for="favor1">Football</label>
+               </div>
+               <div class="input-group-item">
+                  <input type="checkbox" name="favorite-item" id="favor2">
+                  <label for="favor2">Drawing</label>
+               </div>
+               <div class="input-group-item">
+                  <input type="checkbox" name="favorite-item" id="favor3">
+                  <label for="favor3">Programing</label>
+               </div>
+               <div class="input-group-item">
+                  <input type="checkbox" name="favorite-item" id="favor4">
+                  <label for="favor4">Puzzle</label>
+               </div>
+            </div>
+            <!-- end favorite -->
+         </div>
+         <button type="submit" class="btn btn-success btn-align" data-toggle='modal' data-target='#my-modal'>Register</button>
+      </form>
+      <!-- start modal -->
+      <div class="modal fade" id="my-modal" role="dialog">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="h3 success">Your Personal Information</h3>
+                  <button class="btn close" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body" id="my-modal-body">
+                  Nguyeenx Thanh Hoaf
+               </div>
+               <div class="modal-footer">
+                  <button class="btn close" data-dismiss='modal'>Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end modal -->
+
+   </div>
+
+
+   <script src="../node_modules/jquery/dist/jquery.slim.min.js "></script>
+   <!-- <script src="../node_modules/popper.js/dist/popper.min.js "></script> -->
+   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+   <script src="PersonalForm.js "></script>
+</body>
+
+</html>

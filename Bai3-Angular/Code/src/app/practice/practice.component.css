@@ -1,0 +1,9 @@
+.input{
+    display: block;
+}
+.splitter{
+    display: block;
+    border-top: 2px solid rebeccapurple;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

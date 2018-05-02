@@ -1,0 +1,28 @@
+<label><strong>Username</strong> {{username}}</label>
+<input type="text" class="form-control" [(ngModel)]="username">
+<label><strong>Password</strong></label>
+<input type="password" class="form-control" [(ngModel)]="password">
+<label><strong>Gender</strong>{{isMale? 'Boy':'Girl'}}</label>
+<input type="checkbox" class="form-control" [(ngModel)]="isMale">
+<label><strong>Role</strong>{{role}}</label>
+<select class="form-control"[(ngModel)]="role">
+  <option value="AD">Admin</option>
+  <option value="MA">Manager</option>
+  <option value="CUS">Customer</option>
+</select>
+<div class="splitter"></div>
+<label><strong>Value</strong> {{value}}</label>
+<input type="text" class="form-control" [(ngModel)]="value">
+<label><strong>Display</strong> {{display}}</label>
+<input type="text" class="form-control" [(ngModel)]="display">
+<button (click)="add(value,display)">Add</button>
+<br>
+<label><strong>Dynamic Select</strong> {{dynamicselect}}</label>
+<select class="form-control"[(ngModel)]="dynamicselect">
+    <option *ngFor="let item of combobox"[value]="item.value">{{item.display}}</option>
+</select>
+
+
+<div class="splitter"></div>
+<button class="btn btn-primary" (click)="login('Login 1')">Login 1</button>
+<button class="btn btn-primary" (click)="login('Login 2')">Login 2</button>

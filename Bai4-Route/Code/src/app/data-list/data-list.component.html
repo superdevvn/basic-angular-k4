@@ -1,0 +1,12 @@
+<ul>
+  <!-- <li *ngFor="let data of dataList; let i = index; let f = first" (click)="onItemClicked(data.id)"> -->
+  <li *ngFor="let data of dataList; let i = index; let f = first">
+    <a routerLink="/list/{{data.id}}">
+      <h2 [ngClass]="{'red': f}" *ngIf="data.gender === 'female'; else male">{{data.name}}</h2>
+      <!-- https://angular.io/api/common/NgClass -->
+      <!-- <ng-template #male><i [ngClass]="{'red': data.age > 28}">{{data.name}}</i></ng-template> -->
+      <h3>{{getDate(i) | date:'dd/mm/yyyy'}}</h3>
+      <h3>{{data.balance | myNumber:'$'}}</h3>
+    </a>
+  </li>
+</ul>

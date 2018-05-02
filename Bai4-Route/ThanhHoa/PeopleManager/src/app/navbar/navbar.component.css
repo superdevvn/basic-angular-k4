@@ -1,0 +1,21 @@
+.navbar {
+   font-weight: 600;
+}
+.navbar > a > span {
+   vertical-align: 0.5rem;
+   margin-left: -1.75rem;
+   font-size: 22px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: 550;
+   color: bisque;   
+}
+.bg-dark2{
+   background-color:#6c757d!important;
+}
+a.bg-dark2:focus, a.bg-dark2:hover, button.bg-dark2:focus, button.bg-dark2:hover{
+   background-color:#242729!important;
+}
+#logo {
+   width: 50px;
+   height: 50px;
+}

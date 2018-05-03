@@ -1,0 +1,20 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let per of data; let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{per.name}}</td>
+      <td>{{per.age}}</td>
+      <td>{{per.gender}}</td>
+      <td>{{per.email}}</td>
+  </tr>
+  </tbody>
+</table>

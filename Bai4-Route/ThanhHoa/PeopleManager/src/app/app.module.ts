@@ -10,6 +10,7 @@ import { ListComponent } from './content/list/list.component';
 import { DetailComponent } from './content/detail/detail.component';
 
 import { routes } from './app.routes';
+import { NotFoundComponent } from './not-found/app.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { routes } from './app.routes';
     BreadcrumbComponent,
     ContentComponent,
     ListComponent,
-    DetailComponent
+    DetailComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

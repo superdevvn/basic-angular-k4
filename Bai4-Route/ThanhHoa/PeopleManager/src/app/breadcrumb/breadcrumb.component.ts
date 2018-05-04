@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-breadcrumb',
@@ -7,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumbComponent implements OnInit {
   links = [];
-  constructor() {
+  constructor(private router: Router) {
   }
   ngOnInit() {
-    this.splitLinks();
+    this.router.events.subscribe((event) => {
+      console.log(event);
+
+      if (event instanceof NavigationEnd) {
+        this.splitLinks();
+      }
+    });
   }
   splitLinks() {
     const link = window.location.href;

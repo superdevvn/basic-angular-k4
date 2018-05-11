@@ -1,0 +1,29 @@
+<h3 class="error">{{message}}</h3>
+
+<div class="list">
+  <div *ngFor="let movie of movies" (click)="onMovieClick(movie.id)">{{movie.title}}</div>
+</div>
+
+<div class="new">
+  <div>Title
+    <input [(ngModel)]="movie.title" />
+  </div>
+  <br/>
+
+  <div>Year
+    <input [(ngModel)]="movie.year" />
+  </div>
+  <br/>
+
+  <div>Description
+    <input [(ngModel)]="movie.description" />
+  </div>
+  <br/>
+
+  <div>Rate
+    <input [(ngModel)]="movie.rate" />
+  </div>
+
+  <hr/>
+  <button (click)="onSave()">Save</button>
+</div>

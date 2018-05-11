@@ -1,0 +1,13 @@
+
+<div class="page-movies">
+
+  <div class="block-movies" style="display: inline-flex" *ngFor="let movie of movies">
+    <div class="col-sm-12 col-lg-12 movies">
+      <div class="around-img">
+        <img id="img-movie" src="{{movie.medium_cover_image}}">
+      </div>
+      <div class="title-movie titles">{{movie.title}}</div>
+      <div class="title-movie">{{movie.year}}</div>
+    </div>
+  </div>
+</div>

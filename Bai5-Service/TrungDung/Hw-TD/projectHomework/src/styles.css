@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.movies{
+    width: 180px;
+    height: 300px;
+    display: block;
+}
+
+.block-movies{
+    margin: 2%;
+}
+
+.titles{
+    font: 800;
+}
+
+.title-movie{
+    font-size: 9pt;
+    color: white;
+}
+.page-movies{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#img-movie{
+    width: 96%;
+    height: 96%;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.behind-img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+}
+
+.around-img{
+    width: 180px;
+    height: 250px;
+    display: block;
+    background-color: white;
+}

@@ -20,10 +20,16 @@ export class ContentComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        const { page } = this.route.snapshot.params;
-        this.loadAPI(page);
+        this.loadData();
       }
     });
+
+    this.loadData();
+  }
+
+  private loadData() {
+    const { page } = this.route.snapshot.params;
+    this.loadAPI(page);
   }
 
   private async loadAPI(num) {

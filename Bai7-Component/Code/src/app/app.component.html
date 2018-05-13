@@ -1,0 +1,4 @@
+<button (click)="showHome = !showHome">Toggle HomeComponent</button>
+<button (click)="callHome()">Do Something</button>
+
+<app-home #home *ngIf="showHome" [message]="homeMessage" (callApp)="onHomeCall($event)"></app-home>

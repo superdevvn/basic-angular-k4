@@ -1,0 +1,12 @@
+.list, .new {
+    width: 45%;
+    display: inline-block
+}
+
+.new > div {
+    width: 50px;
+}
+
+.error {
+    color: red;
+}

@@ -21,6 +21,7 @@ export class DetailComponent implements OnInit {
 
   assignObj(): void {
     const { id } = this.route.snapshot.params;
+    // this.currentObj = this.currentObjToArray.filter(item => item.id === id);
     for (const item of this.data) {
       if (item.id === id.toString()) {
         this.currentObj = item;
@@ -40,9 +41,9 @@ export class DetailComponent implements OnInit {
       //   }
       //   values[i] = values[i].join('<br/>');
       // }
-        this.currentObjToArray.push(
-          { key: keys[i], value: values[i] }
-        );
+      this.currentObjToArray.push(
+        { key: keys[i], value: values[i] }
+      );
     }
   }
 }

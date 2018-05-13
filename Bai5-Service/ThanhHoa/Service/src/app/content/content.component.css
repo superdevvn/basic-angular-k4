@@ -1,0 +1,26 @@
+.row {
+   margin: 50px;   
+}
+.col-3 {
+
+   margin: auto;
+   height: 23rem;
+}
+.col-3 > img {
+   width: 12rem;
+   display: block;
+   border: 2px solid whitesmoke;
+}
+.col-3 > b {
+   display: block;
+   margin-left: 0.5rem;
+   width: 12rem;
+   font-size: 15px;
+}
+.col-3 > span {
+   display: block;
+   margin-left: 0.5rem;
+   font-size: 13px;
+   font-family: 'Courier New', Courier, monospace;
+   color: gray;
+}

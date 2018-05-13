@@ -8,9 +8,9 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { ContentComponent } from './content/content.component';
 import { ListComponent } from './content/list/list.component';
 import { DetailComponent } from './content/detail/detail.component';
+import { NotFoundComponent } from './not-found/app.component';
 
 import { routes } from './app.routes';
-import { NotFoundComponent } from './not-found/app.component';
 
 @NgModule({
   declarations: [

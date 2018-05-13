@@ -12,8 +12,6 @@ export class BreadcrumbComponent implements OnInit {
   }
   ngOnInit() {
     this.router.events.subscribe((event) => {
-      console.log(event);
-
       if (event instanceof NavigationEnd) {
         this.splitLinks();
       }

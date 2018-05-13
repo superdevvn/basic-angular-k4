@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { Http, Response } from '@angular/http'
-import * as $ from 'jquery'
 import { Router } from '@angular/router';
+
+declare const $: any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   status: string;
   pages: Array<number>;
   totalPages: number;
@@ -15,29 +17,43 @@ export class AppComponent {
   constructor(private http: Http, private router: Router) { }
 
   ngOnInit(): void {
-    this.loadMovies();
+    // console.log($);
+
+
   }
 
+  async ngAfterViewInit() {
+    await this.loadMovies();
 
-  private loadMovies() {
+    $('#pagination-demo').twbsPagination({
+      totalPages: this.totalPages,
+      visiblePages: 10,
+      onPageClick: (event, page) => {
+        this.onItemClicked(page);
+      }
+    });
+  }
+
+  private async loadMovies() {
     this.status = 'Loading .........';
-    const sub = this.http.get('https://yts.am/api/v2/list_movies.json').subscribe((response: Response) => {
+
+    try {
+      const response = await this.http.get('https://yts.am/api/v2/list_movies.json').toPromise();
       // let calPage = response.json().data.movie_count % response.json().data.limit;
       // if (calPage == 0) {
       //   calPage = response.json().data.movie_count / response.json().data.limit;
       // } else {
       const calPage = Math.ceil(response.json().data.movie_count / response.json().data.limit);
       // }
-      this.pages = Array.apply(null, { length: calPage }).map(Number.call, Number)
+      this.pages = Array.apply(null, { length: calPage }).map(Number.call, Number);
       this.totalPages = calPage;
-      this.status = 'Load Done !'
-      sub.unsubscribe();
-    }, error => {
+      this.status = 'Load Done !';
+    } catch (error) {
       console.log(error);
       this.status = 'Load Error !';
-      sub.unsubscribe();
-    });
+    }
   }
+
   onItemClicked(page) {
     this.router.navigate(['/browse-page', { page }]);
   }

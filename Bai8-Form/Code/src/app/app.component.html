@@ -1,0 +1,40 @@
+<!-- <form #form="ngForm" [formGroup]="userForm" (submit)="onFormSubmit()"> -->
+<form [formGroup]="userForm" (submit)="onFormSubmit()">
+  <!-- <label>Name: </label>
+  <input type="text" required minlength="4" [(ngModel)]="user.name" name="name" #name="ngModel" />
+
+  <em *ngIf="name.errors.required">
+    Name is required.
+  </em>
+  <em *ngIf="name.errors.minlength">
+    Name must be at least 4 characters long.
+  </em> -->
+
+  <div>
+    <label>Username:</label>
+    <em *ngIf="userForm.controls['username'].invalid">Username loi roi!</em>
+    <input type="text" formControlName="username" />
+  </div>
+  <div>
+    <label>Name:</label>
+    <input type="text" formControlName="name" />
+  </div>
+
+  <div>
+    <label>Password:</label>
+    <input type="text" formControlName="password" />
+  </div>
+  <div>
+    <label>Re-password:</label>
+    <em *ngIf="userForm.controls['rePassword'].invalid">{{userForm.controls['rePassword'].errors['matching']}}</em>
+    <input type="text" formControlName="rePassword" />
+  </div>
+
+  <!-- <input type="radio" name="radio" value="radio1" [(ngModel)]="user.radio" />
+  <input type="radio" name="radio" value="radio2" [(ngModel)]="user.radio" />
+  <input type="checkbox" name="checkbox" value="check1" [(ngModel)]="user.check1" />
+  <input type="checkbox" name="checkbox" value="check2" [(ngModel)]="user.check2" /> -->
+
+  <!-- <button [hidden]="form.pristine" type="submit">Save</button> -->
+  <button type="submit">Save</button>
+</form>

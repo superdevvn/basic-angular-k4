@@ -1,0 +1,9 @@
+form.ng-pristine{
+    background-color: greenyellow;
+}
+form.ng-invalid{
+    background: red;
+}
+em{
+    color: white;
+}

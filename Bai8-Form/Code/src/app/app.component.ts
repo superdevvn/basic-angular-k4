@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from './models/user.model';
 import { FormGroup, FormControl, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,12 @@ export class AppComponent {
 
   userForm: FormGroup;
 
-  constructor() {
+  constructor(private http: Http) {
+    // const sub = this.http.get().subscribe(re => {
+    //   sub.unsubscribe()
+    // })
+
+
     this.user = new User('Trang');
 
     this.userForm = new FormGroup({

@@ -19,9 +19,28 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/sufee/assets/css/normalize.css",
+        "assets/sufee/assets/css/bootstrap.min.css",
+        "assets/sufee/assets/css/font-awesome.min.css",
+        "assets/sufee/assets/css/themify-icons.css",
+        "assets/sufee/assets/css/flag-icon.min.css",
+        "assets/sufee/assets/scss/style.css",
+        "assets/sufee/assets/css/lib/vector-map/jqvmap.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/sufee/assets/js/vendor/jquery-2.1.4.min.js",
+        "assets/sufee/assets/js/popper.min.js",
+        "assets/sufee/assets/js/plugins.js",
+        "assets/sufee/assets/js/main.js",
+        "assets/sufee/assets/js/lib/chart-js/Chart.bundle.js",
+        "assets/sufee/assets/js/dashboard.js",
+        "assets/sufee/assets/js/widgets.js",
+        "assets/sufee/assets/js/lib/vector-map/jquery.vmap.js",
+        "assets/sufee/assets/js/lib/vector-map/jquery.vmap.min.js",
+        "assets/sufee/assets/js/lib/vector-map/jquery.vmap.sampledata.js",
+        "assets/sufee/assets/js/lib/vector-map/country/jquery.vmap.world.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
